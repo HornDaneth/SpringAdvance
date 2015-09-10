@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd 
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+    
+    <bean id="student" class="com.mcnc.dto.Student">
+    	<property name="id" value="1"/>
+    	<property name="name">
+    		<value>Dara</value>
+    	</property>
+    </bean>
+    <bean id="studentService" class="com.mcnc.service.StudentService" init-method="start" destroy-method="stop">
+    	<property name="student" ref="student"></property>
+    </bean>
+
+	
+    
+    <!-- Name is used to produce more than one Qualifier -->
+    <bean name="myString,hi" class="java.lang.String">
+    	<constructor-arg value="Hello">
+    	</constructor-arg>
+    </bean>
+    
+    
+    <bean id="resourceService" class="com.mcnc.service.ResourceService">
+    	<constructor-arg value="classpath:/照片.jpg"/>
+    </bean>
+</beans>

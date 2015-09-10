@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample: http://www.ehcache.org/ehcache.xml -->
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="ehcache.xsd" 
+	updateCheck="false" 
+	monitoring="autodetect" 
+	dynamicConfig="true">
+	<diskStore path="java.io.tmpdir"/>	
+	
+	<!-- (Enable for Terracotta clustered operation) -->
+	<terracottaConfig>
+	   <tc-config>
+	       <servers>
+	           <server host="localhost:8080" name="s1"/>
+	       </servers>
+	       <clients>
+	           <logs>app/logs-%i</logs>
+	       </clients>
+	   </tc-config>
+	</terracottaConfig>
+	
+	
+<!-- eternal attribute, when set to "true", overrides timeToLive and timeToIdle so that no expiration can take place -->
+	<defaultCache
+     eternal="false"
+     timeToIdleSeconds="120"
+     timeToLiveSeconds="120"
+     memoryStoreEvictionPolicy="LRU"/>
+
+
+	<cache name="students"
+     eternal="false"
+     timeToIdleSeconds="120"
+     timeToLiveSeconds="120"
+     diskExpiryThreadIntervalSeconds="120"
+     maxEntriesLocalHeap="10000" maxEntriesLocalDisk="1000" 
+     memoryStoreEvictionPolicy="LRU">
+     <persistence strategy="localTempSwap"/> <!-- localRestartable -->
+    </cache>	
+    
+    <cache name="cluster-students"
+     eternal="false"
+     timeToIdleSeconds="120"
+     maxBytesLocalHeap="1M"
+     timeToLiveSeconds="120">
+  		<terracotta clustered="false"/>
+    </cache>	            
+</ehcache>

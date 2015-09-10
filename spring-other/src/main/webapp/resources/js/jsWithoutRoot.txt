@@ -1,0 +1,17 @@
+﻿function constructTree( param ){
+		var htmlText = '';
+		
+		if( param.leaf != true ) {
+			$.each( param.userChildren, function(index, value){
+				htmlText += '<li><span class="file" id="' + value.userName + '" href="#">' + value.fullName + '</span></li>';
+			});
+			$.each( param.departmentChildren, function(index, value){
+				htmlText += '<li>';
+				htmlText += '<span class="folder" href="#">' + value.departmentName + '</span>' ;
+				var temp =  constructTree( value ) ;
+				htmlText += "<ul>" + temp + "</ul>";
+				htmlText += '</li>';
+			});
+		}
+		return htmlText;
+	}

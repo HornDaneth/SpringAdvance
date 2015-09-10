@@ -1,0 +1,210 @@
+2015-02-04 19:22:28,036 [main] INFO com.terracottatech.general - New logging session started.
+2015-02-04 19:22:28,036 [main] INFO com.terracottatech.console - Terracotta Enterprise 3.4.0, as of 20101105-061114 (Revision 9188-16617 by cruise@kong from 3.4.0)
+2015-02-04 19:22:28,084 [main] INFO com.tc.config.schema.setup.StandardXMLFileConfigurationCreator - Attempting to load configuration from the file at 'C:\Users\SEAKLE~1.MOB\AppData\Local\Temp\tc-config8204014175913457138.xml'...
+2015-02-04 19:22:28,122 [main] INFO com.terracottatech.console - Successfully loaded base configuration from file at 'C:\Users\SEAKLE~1.MOB\AppData\Local\Temp\tc-config8204014175913457138.xml'.
+2015-02-04 19:22:28,122 [main] INFO com.tc.config.schema.setup.StandardXMLFileConfigurationCreator - The configuration specified by 'base configuration from file at 'C:\Users\SEAKLE~1.MOB\AppData\Local\Temp\tc-config8204014175913457138.xml'':
+
+<tc-config xmlns="http://www.terracotta.org/config">
+  <clients xmlns:tc="http://www.terracotta.org/config" xmlns="">
+    <logs>app/logs-%i</logs>
+    <modules>
+      <module name="terracotta-toolkit-1.1" group-id="org.terracotta.toolkit"/>
+      <module name="terracotta-toolkit-1.1-ee" group-id="org.terracotta.toolkit"/>
+    </modules>
+  </clients>
+  <servers xmlns:tc="http://www.terracotta.org/config" xmlns="">
+    <server host="localhost:8080" name="s1" bind="0.0.0.0"/>
+  </servers>
+</tc-config>
+2015-02-04 19:22:28,159 [main] INFO com.tc.properties.TCProperties - Loading default properties from tc.properties
+2015-02-04 19:22:28,159 [main] INFO com.tc.properties.TCProperties - The property "productkey.resource.path" was read before initialization completed. "productkey.resource.path" = null
+2015-02-04 19:22:28,159 [main] INFO com.tc.properties.TCProperties - The property "license.path" was read before initialization completed. "license.path" = null
+2015-02-04 19:22:28,159 [main] INFO com.tc.properties.TCProperties - The property "productkey.path" was read before initialization completed. "productkey.path" = null
+2015-02-04 19:22:28,159 [main] INFO com.tc.properties.TCProperties - The property "tc.config.getFromSource.timeout" was read before initialization completed. "tc.config.getFromSource.timeout" = 30000
+2015-02-04 19:22:28,159 [main] INFO com.tc.properties.TCProperties - tc-config doesn't have any tc-property. No tc-property will be overridden
+2015-02-04 19:22:28,160 [main] INFO com.tc.properties.TCProperties - Loaded TCProperties : TCProperties = { cvt.buffer.randomsuffix.enabled = false, cvt.client.fail.buffer.open = false, cvt.rest.interface.enabled = true, cvt.retriever.notification.interval = 60, cvt.statistics.logging.interval = 900, cvt.store.randomsuffix.enabled = false, dev.console.max.operator.events = 5000, ehcache.clusterAllCacheManagers = true, ehcache.concurrency = 128, ehcache.evictor.logging.enabled = false, ehcache.evictor.pool.size = 1, ehcache.global.eviction.enable = true, ehcache.global.eviction.frequency = 10, ehcache.global.eviction.rest.timeMillis = 10, ehcache.global.eviction.segments = 2, ehcache.lock.readLevel = READ, ehcache.lock.writeLevel = WRITE, ehcache.logging.enabled = false, ehcache.storageStrategy.dcv2.localcache.enabled = true, ehcache.storageStrategy.dcv2.localcache.incoherentReadTimeout = 300000, ehcache.storageStrategy.dcv2.perElementTTITTL.enabled = false, ehcache.storageStrategy.dcv2.periodicEviction.enabled = true, ehcache.storageStrategy.dcv2.pinSegments.enabled = true, http.defaultservlet.attribute.aliases = false;, http.defaultservlet.attribute.dirallowed = false;, http.defaultservlet.enabled = false;, instrumentation.finalField.fastRead = true, l1.cachemanager.criticalObjectThreshold = -1, l1.cachemanager.criticalThreshold = 90, l1.cachemanager.enabled = true, l1.cachemanager.leastCount = 2, l1.cachemanager.logging.enabled = false, l1.cachemanager.monitorOldGenOnly = true, l1.cachemanager.percentageToEvict = 10, l1.cachemanager.sleepInterval = 3000, l1.cachemanager.threshold = 70, l1.connect.versionMatchCheck.enabled = true, l1.healthcheck.l2.bindAddress = 0.0.0.0, l1.healthcheck.l2.bindPort = 0, l1.healthcheck.l2.ping.enabled = true, l1.healthcheck.l2.ping.idletime = 5000, l1.healthcheck.l2.ping.interval = 1000, l1.healthcheck.l2.ping.probes = 3, l1.healthcheck.l2.socketConnect = true, l1.healthcheck.l2.socketConnectCount = 13, l1.healthcheck.l2.socketConnectTimeout = 5, l1.jvm.check.compatibility = true, l1.l2.config.validation.enabled = true, l1.lock.statistics.gatherInterval = 1, l1.lock.statistics.traceDepth = 0, l1.lockmanager.striped.count = 128, l1.lockmanager.timeout.interval = 60000, l1.max.connect.retries = -1, l1.modules.additional = , l1.modules.default = org.terracotta.modules.excludes-config;bundle-version:=3.4.0,org.terracotta.modules.guimodels-config;bundle-version:=3.4.0,org.terracotta.modules.jdk15-preinst-config;bundle-version:=3.4.0,org.terracotta.modules.standard-config;bundle-version:=3.4.0, l1.modules.repositories = , l1.modules.tc-version-check = , l1.modules.toolkitSearchRange = 100, l1.objectmanager.fault.logging.enabled = false, l1.objectmanager.flush.logging.enabled = false, l1.objectmanager.objectid.request.size = 50000, l1.objectmanager.remote.batchLookupTimePeriod = 1, l1.objectmanager.remote.logging.enabled = false, l1.objectmanager.remote.maxDNALRUSize = 60, l1.objectmanager.remote.maxRequestSentImmediately = 4, l1.seda.stage.sink.capacity = -1, l1.serverarray.objectCreationStrategy = round-robin, l1.serverarray.objectCreationStrategy.groupAffinity.groupName = mirror-group1, l1.serverarray.objectCreationStrategy.roundRobin.startIndex = sequential, l1.servermapmanager.remote.batchLookupTimePeriod = 1, l1.servermapmanager.remote.maxRequestSentImmediately = 4, l1.shutdown.threadgroup.gracetime = 30000, l1.socket.connect.timeout = 10000, l1.socket.reconnect.waitInterval = 1000, l1.transactionmanager.completedAckFlushTimeout = 5000, l1.transactionmanager.folding.debug = false, l1.transactionmanager.folding.enabled = true, l1.transactionmanager.folding.lock.limit = 0, l1.transactionmanager.folding.object.limit = 0, l1.transactionmanager.logging.enabled = false, l1.transactionmanager.maxBatchSizeInKiloBytes = 128, l1.transactionmanager.maxOutstandingBatchSize = 4, l1.transactionmanager.maxPendingBatches = 88, l1.transactionmanager.maxSleepTimeBeforeHalt = 1024, l1.transactionmanager.strings.compress.enabled = true, l1.transactionmanager.strings.compress.logging.enabled = false, l1.transactionmanager.strings.compress.minSize = 512, l1.transactionmanager.timeoutForAckOnExit = 300, l2.beanshell.enabled = false, l2.beanshell.port = 9929, l2.berkeleydb.je.checkpointer.bytesInterval = 100000000, l2.berkeleydb.je.cleaner.bytesInterval = 20000000, l2.berkeleydb.je.cleaner.detailMaxMemoryPercentage = 5, l2.berkeleydb.je.cleaner.lookAheadCacheSize = 32768, l2.berkeleydb.je.cleaner.minAge = 5, l2.berkeleydb.je.lock.nLockTables = 7, l2.berkeleydb.je.lock.timeout = 180000000, l2.berkeleydb.je.maxMemoryPercent = 25, l2.cachemanager.criticalObjectThreshold = -1, l2.cachemanager.criticalThreshold = 90, l2.cachemanager.enabled = true, l2.cachemanager.leastCount = 2, l2.cachemanager.logging.enabled = false, l2.cachemanager.monitorOldGenOnly = true, l2.cachemanager.percentageToEvict = 10, l2.cachemanager.sleepInterval = 3000, l2.cachemanager.threshold = 70, l2.data.backup.throttle.timeInMillis = 0, l2.dump.on.exception.timeout = 30, l2.healthcheck.l1.ping.enabled = true, l2.healthcheck.l1.ping.idletime = 5000, l2.healthcheck.l1.ping.interval = 1000, l2.healthcheck.l1.ping.probes = 3, l2.healthcheck.l1.socketConnect = true, l2.healthcheck.l1.socketConnectCount = 10, l2.healthcheck.l1.socketConnectTimeout = 5, l2.healthcheck.l2.ping.enabled = true, l2.healthcheck.l2.ping.idletime = 5000, l2.healthcheck.l2.ping.interval = 1000, l2.healthcheck.l2.ping.probes = 3, l2.healthcheck.l2.socketConnect = true, l2.healthcheck.l2.socketConnectCount = 10, l2.healthcheck.l2.socketConnectTimeout = 5, l2.l1reconnect.enabled = false, l2.l1reconnect.maxDelayedAcks = 16, l2.l1reconnect.sendWindow = 32, l2.l1reconnect.sendqueue.cap = 5000, l2.l1reconnect.timeout.millis = 2000, l2.lfu.agingFactor = 1, l2.lfu.debug.enabled = false, l2.lfu.recentlyAccessedIgnorePercentage = 20, l2.lockmanager.greedy.lease.enabled = true, l2.lockmanager.greedy.lease.leaseTimeInMillis = 50, l2.lockmanager.greedy.locks.enabled = true, l2.nha.autoRestart = true, l2.nha.dirtydb.autoDelete = true, l2.nha.dirtydb.rolling = 0, l2.nha.send.timeout.millis = 16000, l2.nha.tcgroupcomm.discovery.interval = 1000, l2.nha.tcgroupcomm.handshake.timeout = 5000, l2.nha.tcgroupcomm.reconnect.enabled = false, l2.nha.tcgroupcomm.reconnect.maxDelayedAcks = 16, l2.nha.tcgroupcomm.reconnect.sendWindow = 32, l2.nha.tcgroupcomm.reconnect.sendqueue.cap = 5000, l2.nha.tcgroupcomm.reconnect.timeout = 2000, l2.objectmanager.cachePolicy = lfu, l2.objectmanager.deleteBatchSize = 5000, l2.objectmanager.dgc.enterpriseMarkStageInterval = 1000, l2.objectmanager.dgc.faulting.optimization = true, l2.objectmanager.dgc.throttle.requestsPerThrottle = 1000, l2.objectmanager.dgc.throttle.timeInMillis = 0, l2.objectmanager.dgc.young.enabled = false, l2.objectmanager.dgc.young.frequencyInMillis = 180000, l2.objectmanager.fault.logging.enabled = false, l2.objectmanager.flush.logging.enabled = false, l2.objectmanager.loadObjectID.checkpoint.maxlimit = -1, l2.objectmanager.loadObjectID.checkpoint.maxsleep = 10000, l2.objectmanager.loadObjectID.longsPerDiskEntry = 8, l2.objectmanager.loadObjectID.mapsdatabase.longsPerDiskEntry = 1, l2.objectmanager.maxObjectsInTxnObjGrouping = 5000, l2.objectmanager.maxObjectsToCommit = 5000, l2.objectmanager.maxTxnsInTxnObjectGrouping = 500, l2.objectmanager.objectrequest.logging.enabled = false, l2.objectmanager.objectrequest.split.size = 500, l2.objectmanager.passive.sync.batch.size = 500, l2.objectmanager.passive.sync.throttle.timeInMillis = 0, l2.objectmanager.persistor.logging.enabled = false, l2.objectmanager.request.logging.enabled = false, l2.offHeapCache.map.concurrency = 1, l2.offHeapCache.map.initialDataSize = 10k, l2.offHeapCache.map.percentage = 25, l2.offHeapCache.map.tableSize = 1k, l2.offHeapCache.max.chunk.size = 512m, l2.offHeapCache.min.chunk.size = 32m, l2.offHeapCache.operator.event.generator.sleepInterval = 60000, l2.offHeapCache.operator.event.generator.threshold = 80, l2.operator.events.store = 1500, l2.remotejmx.idletime = 5, l2.remotejmx.maxthreads = 50, l2.seda.commitstage.threads = 4, l2.seda.gcdeletestage.threads = 1, l2.seda.stage.sink.capacity = -1, l2.serverarray.2pc.enabled = true, l2.startuplock.retries.enabled = false, l2.transactionmanager.logging.enabled = false, l2.transactionmanager.logging.printBroadcastStats = false, l2.transactionmanager.logging.printCommits = false, l2.transactionmanager.logging.printStats = true, l2.transactionmanager.logging.verbose = false, l2.transactionmanager.passive.throttle.enabled = true, l2.transactionmanager.passive.throttle.maxSleepSeconds = 5, l2.transactionmanager.passive.throttle.threshold = 20000, lock.statistics.enabled = false, logging.longgc.threshold = 8000, logging.maxBackups = 20, logging.maxLogFileSize = 512, memory.monitor.forcebasic = false, net.core.keepalive = false, net.core.tcpnodelay = true, session.debug.hops = false, session.debug.hops.interval = 100, session.debug.invalidate = false, session.debug.sessions = false, session.invalidator.bench.enabled = true, session.invalidator.sleep = 300, session.request.bench.enabled = false, session.request.tracking = false, session.request.tracking.dump = false, session.request.tracking.interval = 2500, session.request.tracking.threshold = 15000, session.statistics.enabled = false, session.verify.set.attribute = false, session.vhosts.excluded = , stats.printer.intervalInMillis = 5000, tc.bytebuffer.common.pool.maxcount = 3000, tc.bytebuffer.pooling.enabled = true, tc.bytebuffer.threadlocal.pool.maxcount = 2000, tc.config.getFromSource.timeout = 30000, tc.management.mbeans.enabled = true, tc.management.test.mbeans.enabled = false, tc.messages.grouping.enabled = true, tc.messages.grouping.maxSizeKiloBytes = 1024, tc.stage.monitor.delay = 5000, tc.stage.monitor.enabled = false, tc.transport.handshake.timeout = 10000, tcm.monitor.delay = 5, tcm.monitor.enabled = false }
+2015-02-04 19:22:28,280 [main] INFO com.terracottatech.console - Log file: 'D:\workspace\Learn\spring-cache\app\logs-192.168.137.1\terracotta-client.log'.
+2015-02-04 19:22:28,281 [main] INFO com.tc.logging.TCLogging - All Java System Properties for this Terracotta instance:
+========================================================================
+JVM arguments: [-Djava.library.path=D:\workspace\Learn\mybatis\src\main\webapp\WEB-INF\lib\x64, -Dfile.encoding=UTF-8]
+awt.toolkit                  : sun.awt.windows.WToolkit
+file.encoding                : UTF-8
+file.encoding.pkg            : sun.io
+file.separator               : \
+java.awt.graphicsenv         : sun.awt.Win32GraphicsEnvironment
+java.awt.printerjob          : sun.awt.windows.WPrinterJob
+java.class.path              : D:\workspace\Learn\spring-cache\target\test-classes;D:\workspace\Learn\spring-cache\target\classes;C:\Apache\Tomcat7\lib\annotations-api.jar;C:\Apache\Tomcat7\lib\catalina-ant.jar;C:\Apache\Tomcat7\lib\catalina-ha.jar;C:\Apache\Tomcat7\lib\catalina-tribes.jar;C:\Apache\Tomcat7\lib\catalina.jar;C:\Apache\Tomcat7\lib\ecj-4.3.1.jar;C:\Apache\Tomcat7\lib\el-api.jar;C:\Apache\Tomcat7\lib\jasper-el.jar;C:\Apache\Tomcat7\lib\jasper.jar;C:\Apache\Tomcat7\lib\jsp-api.jar;C:\Apache\Tomcat7\lib\servlet-api.jar;C:\Apache\Tomcat7\lib\tomcat-api.jar;C:\Apache\Tomcat7\lib\tomcat-coyote.jar;C:\Apache\Tomcat7\lib\tomcat-dbcp.jar;C:\Apache\Tomcat7\lib\tomcat-i18n-es.jar;C:\Apache\Tomcat7\lib\tomcat-i18n-fr.jar;C:\Apache\Tomcat7\lib\tomcat-i18n-ja.jar;C:\Apache\Tomcat7\lib\tomcat-jdbc.jar;C:\Apache\Tomcat7\lib\tomcat-util.jar;C:\Apache\Tomcat7\lib\tomcat7-websocket.jar;C:\Apache\Tomcat7\lib\websocket-api.jar;D:\Software for Develop\IDE\eclipse-jee-mars-M3-win32-x86_64\eclipse\plugins\org.junit_4.11.0.v201303080030\junit.jar;D:\Software for Develop\IDE\eclipse-jee-mars-M3-win32-x86_64\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar;D:\workspace\Learn\spring-cache\src\main\webapp\WEB-INF\lib\sqljdbc4-4.0.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\org\springframework\spring-core\4.1.3.RELEASE\spring-core-4.1.3.RELEASE.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\org\springframework\spring-web\4.1.3.RELEASE\spring-web-4.1.3.RELEASE.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\org\springframework\spring-beans\4.1.3.RELEASE\spring-beans-4.1.3.RELEASE.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\org\springframework\spring-context\4.1.3.RELEASE\spring-context-4.1.3.RELEASE.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\org\springframework\spring-webmvc\4.1.3.RELEASE\spring-webmvc-4.1.3.RELEASE.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\org\springframework\spring-expression\4.1.3.RELEASE\spring-expression-4.1.3.RELEASE.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\org\springframework\spring-context-support\4.1.3.RELEASE\spring-context-support-4.1.3.RELEASE.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\taglibs\standard\1.1.2\standard-1.1.2.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\javax\servlet\jstl\1.2\jstl-1.2.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\org\springframework\spring-test\4.1.3.RELEASE\spring-test-4.1.3.RELEASE.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\org\apache\xbean\xbean-spring\4.1\xbean-spring-4.1.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.4.4\jackson-databind-2.4.4.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.4.4\jackson-annotations-2.4.4.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.4.4\jackson-core-2.4.4.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\org\springframework\spring-jdbc\4.1.3.RELEASE\spring-jdbc-4.1.3.RELEASE.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\org\springframework\spring-tx\4.1.3.RELEASE\spring-tx-4.1.3.RELEASE.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\org\mybatis\mybatis-spring\1.2.1\mybatis-spring-1.2.1.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\org\mybatis\mybatis\3.2.3\mybatis-3.2.3.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\org\apache\openejb\commons-dbcp-all\1.3\commons-dbcp-all-1.3.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\net\sf\ehcache\ehcache-core\2.6.10\ehcache-core-2.6.10.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\org\terracotta\terracotta-toolkit-1.1-runtime-ee\2.0.0\terracotta-toolkit-1.1-runtime-ee-2.0.0.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\net\sf\ehcache\ehcache-core-ee\2.3.0\ehcache-core-ee-2.3.0.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\net\sf\ehcache\ehcache-terracotta-ee\2.3.0\ehcache-terracotta-ee-2.3.0.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\org\springframework\spring-aop\4.1.3.RELEASE\spring-aop-4.1.3.RELEASE.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\org\springframework\spring-aspects\4.1.3.RELEASE\spring-aspects-4.1.3.RELEASE.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\org\aspectj\aspectjweaver\1.8.4\aspectjweaver-1.8.4.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\org\slf4j\slf4j-log4j12\1.7.9\slf4j-log4j12-1.7.9.jar;C:\Users\seakleng.MOBILECNC\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;/D:/Software for Develop/IDE/eclipse-jee-mars-M3-win32-x86_64/eclipse/configuration/org.eclipse.osgi/363/0/.cp/;/D:/Software for Develop/IDE/eclipse-jee-mars-M3-win32-x86_64/eclipse/configuration/org.eclipse.osgi/362/0/.cp/
+java.class.version           : 51.0
+java.endorsed.dirs           : C:\Program Files\Java\jdk1.7.0_65\jre\lib\endorsed
+java.ext.dirs                : C:\Program Files\Java\jdk1.7.0_65\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+java.home                    : C:\Program Files\Java\jdk1.7.0_65\jre
+java.io.tmpdir               : C:\Users\SEAKLE~1.MOB\AppData\Local\Temp\
+java.library.path            : D:\workspace\Learn\mybatis\src\main\webapp\WEB-INF\lib\x64
+java.runtime.name            : Java(TM) SE Runtime Environment
+java.runtime.version         : 1.7.0_65-b19
+java.specification.name      : Java Platform API Specification
+java.specification.vendor    : Oracle Corporation
+java.specification.version   : 1.7
+java.vendor                  : Oracle Corporation
+java.vendor.url              : http://java.oracle.com/
+java.vendor.url.bug          : http://bugreport.sun.com/bugreport/
+java.version                 : 1.7.0_65
+java.vm.info                 : mixed mode
+java.vm.name                 : Java HotSpot(TM) 64-Bit Server VM
+java.vm.specification.name   : Java Virtual Machine Specification
+java.vm.specification.vendor : Oracle Corporation
+java.vm.specification.version: 1.7
+java.vm.vendor               : Oracle Corporation
+java.vm.version              : 24.65-b04
+line.separator               : 
+
+org.hyperic.sigar.path       : C:\Users\SEAKLE~1.MOB\AppData\Local\Temp\tmpSigarJars689317418950486240939963496837081
+os.arch                      : amd64
+os.name                      : Windows 7
+os.version                   : 6.1
+path.separator               : ;
+sun.arch.data.model          : 64
+sun.boot.class.path          : C:\Program Files\Java\jdk1.7.0_65\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_65\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_65\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_65\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_65\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_65\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_65\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_65\jre\classes
+sun.boot.library.path        : C:\Program Files\Java\jdk1.7.0_65\jre\bin
+sun.cpu.endian               : little
+sun.cpu.isalist              : amd64
+sun.desktop                  : windows
+sun.io.unicode.encoding      : UnicodeLittle
+sun.java.command             : org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 59709 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -classNames com.mcnc.mybatis.service.StudentServiceCacheTest
+sun.java.launcher            : SUN_STANDARD
+sun.jnu.encoding             : Cp1252
+sun.management.compiler      : HotSpot 64-Bit Tiered Compilers
+sun.os.patch.level           : Service Pack 1
+tc.active                    : true
+tc.dso.globalmode            : false
+user.country                 : US
+user.dir                     : D:\workspace\Learn\spring-cache
+user.home                    : C:\Users\seakleng.MOBILECNC
+user.language                : en
+user.name                    : seakleng
+user.script                  : 
+user.timezone                : Asia/Bangkok
+user.variant                 : 
+========================================================================
+2015-02-04 19:22:28,607 [main] INFO com.tc.bundles.Resolver - First toolkit reference found: ToolkitVersion(1.1)
+2015-02-04 19:22:28,607 [main] INFO com.tc.bundles.Resolver - Freezing toolkit major version from: ToolkitVersion(1.1)
+2015-02-04 19:22:28,612 [main] INFO com.tc.bundles.Resolver - new version = 2.0.0
+2015-02-04 19:22:28,617 [main] INFO com.tc.bundles.Resolver - Resolved TIM org.terracotta.toolkit:terracotta-toolkit-1.1:2.0.0 from tcjar:__TC__jar:file:/C:/Users/seakleng.MOBILECNC/.m2/repository/org/terracotta/terracotta-toolkit-1.1-runtime-ee/2.0.0/terracotta-toolkit-1.1-runtime-ee-2.0.0.jar!/TIMs/terracotta-toolkit-1.1-2.0.0.jar__TC__/
+2015-02-04 19:22:28,618 [main] INFO com.tc.bundles.Resolver - Actual toolkit API version resolved: ToolkitVersion(1.1) <xml-fragment group-id="org.terracotta.toolkit" name="terracotta-toolkit-1.1" version="2.0.0"/>
+2015-02-04 19:22:28,619 [main] INFO com.tc.bundles.Resolver - new version = 2.0.0
+2015-02-04 19:22:28,619 [main] INFO com.tc.bundles.Resolver - Resolved TIM org.terracotta.toolkit:terracotta-toolkit-1.1:2.0.0 from tcjar:__TC__jar:file:/C:/Users/seakleng.MOBILECNC/.m2/repository/org/terracotta/terracotta-toolkit-1.1-runtime-ee/2.0.0/terracotta-toolkit-1.1-runtime-ee-2.0.0.jar!/TIMs/terracotta-toolkit-1.1-2.0.0.jar__TC__/
+2015-02-04 19:22:28,620 [main] INFO com.tc.bundles.Resolver - new version = 2.0.0
+2015-02-04 19:22:28,620 [main] INFO com.tc.bundles.Resolver - Resolved TIM org.terracotta.toolkit:terracotta-toolkit-1.1-ee:2.0.0 from tcjar:__TC__jar:file:/C:/Users/seakleng.MOBILECNC/.m2/repository/org/terracotta/terracotta-toolkit-1.1-runtime-ee/2.0.0/terracotta-toolkit-1.1-runtime-ee-2.0.0.jar!/TIMs/terracotta-toolkit-1.1-ee-2.0.0.jar__TC__/
+2015-02-04 19:22:28,796 [main] WARN com.tc.plugins.ModulesLoader - org.terracotta.modules.excludes-config does not declare a TIM API version requirement
+2015-02-04 19:22:28,798 [main] FATAL com.terracottatech.console - Unknown or unsupported vendor string: Oracle Corporation
+2015-02-04 19:22:28,800 [main] FATAL com.tc.object.bytecode.hook.impl.DSOContextImpl - Exception thrown
+org.osgi.framework.BundleException: Unknown or unsupported vendor string: Oracle Corporation
+	at com.tc.plugins.ModulesLoader.getConfigPath(ModulesLoader.java:420)
+	at com.tc.plugins.ModulesLoader.loadConfiguration(ModulesLoader.java:445)
+	at com.tc.plugins.ModulesLoader.access$400(ModulesLoader.java:75)
+	at com.tc.plugins.ModulesLoader$2.callback(ModulesLoader.java:236)
+	at com.tc.bundles.KnopflerfishOSGi.startBundle(KnopflerfishOSGi.java:115)
+	at com.tc.bundles.KnopflerfishOSGi.startBundles(KnopflerfishOSGi.java:82)
+	at com.tc.plugins.ModulesLoader.installAndStartBundles(ModulesLoader.java:241)
+	at com.tc.plugins.ModulesLoader.initModules(ModulesLoader.java:182)
+	at com.tc.plugins.ModulesLoader.initModules(ModulesLoader.java:133)
+	at com.tc.object.bytecode.hook.impl.DSOContextImpl.<init>(DSOContextImpl.java:209)
+	at com.tc.object.bytecode.hook.impl.DSOContextImpl.createContext(DSOContextImpl.java:192)
+	at com.tc.object.bytecode.hook.impl.DSOContextImpl.createStandaloneContext(DSOContextImpl.java:167)
+	at org.terracotta.express.StandaloneL1Boot.call(StandaloneL1Boot.java:188)
+	at org.terracotta.express.ClientImpl.<init>(ClientImpl.java:371)
+	at org.terracotta.express.ClientFactoryImpl.newClient(ClientFactoryImpl.java:146)
+	at org.terracotta.express.ClientFactoryImpl.createClient(ClientFactoryImpl.java:140)
+	at org.terracotta.express.ClientFactoryImpl.getOrCreateClient(ClientFactoryImpl.java:93)
+	at org.terracotta.express.ClientFactory.getOrCreateClient(ClientFactory.java:28)
+	at net.sf.ehcache.terracotta.ExpressEnterpriseTerracottaClusteredInstanceFactory.<init>(ExpressEnterpriseTerracottaClusteredInstanceFactory.java:29)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at net.sf.ehcache.util.ClassLoaderUtil.createNewInstance(ClassLoaderUtil.java:92)
+	at net.sf.ehcache.terracotta.TerracottaClusteredInstanceHelper.newClusteredInstanceFactory(TerracottaClusteredInstanceHelper.java:176)
+	at net.sf.ehcache.terracotta.TerracottaClient.createNewClusteredInstanceFactory(TerracottaClient.java:186)
+	at net.sf.ehcache.terracotta.TerracottaClient.createClusteredInstanceFactory(TerracottaClient.java:138)
+	at net.sf.ehcache.CacheManager.doInit(CacheManager.java:432)
+	at net.sf.ehcache.CacheManager.init(CacheManager.java:377)
+	at net.sf.ehcache.CacheManager.<init>(CacheManager.java:259)
+	at org.springframework.cache.ehcache.EhCacheManagerFactoryBean.afterPropertiesSet(EhCacheManagerFactoryBean.java:157)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1625)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198)
+	at org.springframework.aop.support.AbstractBeanFactoryPointcutAdvisor.getAdvice(AbstractBeanFactoryPointcutAdvisor.java:88)
+	at org.springframework.aop.aspectj.AspectJProxyUtils.isAspectJAdvice(AspectJProxyUtils.java:67)
+	at org.springframework.aop.aspectj.AspectJProxyUtils.makeAdvisorChainAspectJCapableIfNecessary(AspectJProxyUtils.java:49)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.extendAdvisors(AspectJAwareAdvisorAutoProxyCreator.java:97)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:89)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:69)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:330)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:293)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:252)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:254)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:217)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
