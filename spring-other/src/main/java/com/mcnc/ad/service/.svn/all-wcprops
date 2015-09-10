@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/spring-tutorial/code/!svn/ver/56/trunk/spring-other/src/main/java/com/mcnc/ad/service
+END
+UserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/spring-tutorial/code/!svn/ver/56/trunk/spring-other/src/main/java/com/mcnc/ad/service/UserService.java
+END
+LdapUsersTreeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/p/spring-tutorial/code/!svn/ver/56/trunk/spring-other/src/main/java/com/mcnc/ad/service/LdapUsersTreeService.java
+END

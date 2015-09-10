@@ -1,0 +1,5 @@
+#Connection Property for SQLServer DB
+#DB.url=jdbc:sqlserver://127.0.0.1\\MSSSQLSERVER08;DatabaseName=dbstudent
+DB.url=jdbc:sqlserver://localhost;DatabaseName=dbstudent
+DB.username=sa
+DB.password=G0CamHell0

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/spring-tutorial/code/!svn/ver/66/trunk/spring-cache/src/test/resources
+END
+appcontext.cache-test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/spring-tutorial/code/!svn/ver/66/trunk/spring-cache/src/test/resources/appcontext.cache-test.xml
+END
+appcontext-test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/spring-tutorial/code/!svn/ver/66/trunk/spring-cache/src/test/resources/appcontext-test.xml
+END
+appcontext-datasource-win.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/spring-tutorial/code/!svn/ver/66/trunk/spring-cache/src/test/resources/appcontext-datasource-win.xml
+END

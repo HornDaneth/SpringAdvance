@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/spring-tutorial/code/!svn/ver/77/trunk/spring-advance/src/main/java/com/mcnc/controller
+END
+ScopeController.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/spring-tutorial/code/!svn/ver/3/trunk/spring-advance/src/main/java/com/mcnc/controller/ScopeController.java
+END
+ValidatorController.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/p/spring-tutorial/code/!svn/ver/77/trunk/spring-advance/src/main/java/com/mcnc/controller/ValidatorController.java
+END
+SimpleController.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/spring-tutorial/code/!svn/ver/3/trunk/spring-advance/src/main/java/com/mcnc/controller/SimpleController.java
+END
+MatrixController.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/spring-tutorial/code/!svn/ver/3/trunk/spring-advance/src/main/java/com/mcnc/controller/MatrixController.java
+END
+ResourceController.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/p/spring-tutorial/code/!svn/ver/3/trunk/spring-advance/src/main/java/com/mcnc/controller/ResourceController.java
+END
+JsonController.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/p/spring-tutorial/code/!svn/ver/3/trunk/spring-advance/src/main/java/com/mcnc/controller/JsonController.java
+END

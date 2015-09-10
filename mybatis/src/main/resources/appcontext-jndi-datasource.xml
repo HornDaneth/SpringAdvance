@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jee="http://www.springframework.org/schema/jee" 
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.2.xsd">
+
+	<jee:jndi-lookup id="dataSource" jndi-name="jdbc/dataSource"
+		expected-type="javax.sql.DataSource" />
+	
+	<!-- add resource to tomcat context.xml -->
+	<!--  <Resource
+         name="jdbc/dataSource"
+         auth="Container"
+         type="javax.sql.DataSource"
+         driverClassName="oracle.jdbc.driver.OracleDriver"
+         url="jdbc:oracle:thin:@localhost:1521/project"
+         username="user"
+         password="12345"
+         validationQuery="SELECT 1 from dual"
+         maxActive="50"
+         maxIdle="10"
+         maxWait="-1"
+         />  -->
+	
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="configLocation" value="classpath:/mybatis/context-sqlmap.xml" />
+	</bean>
+
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.mcnc.mybatis.dao" />
+		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+	</bean>
+	
+	
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
+		p:dataSource-ref="dataSource" />
+	
+	<!-- It can omit transaction-manager="transactionManager" if there is been name transactionManager -->
+	<tx:annotation-driven/>
+</beans>

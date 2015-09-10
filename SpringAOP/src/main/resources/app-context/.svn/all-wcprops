@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/spring-tutorial/code/!svn/ver/3/trunk/SpringAOP/src/main/resources/app-context
+END
+context.properties
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/spring-tutorial/code/!svn/ver/3/trunk/SpringAOP/src/main/resources/app-context/context.properties
+END
+context-datasource.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/spring-tutorial/code/!svn/ver/3/trunk/SpringAOP/src/main/resources/app-context/context-datasource.xml
+END

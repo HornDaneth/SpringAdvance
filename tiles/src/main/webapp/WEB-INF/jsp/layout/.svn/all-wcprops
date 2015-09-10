@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/spring-tutorial/code/!svn/ver/9/trunk/tiles/src/main/webapp/WEB-INF/jsp/layout
+END
+layout.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/spring-tutorial/code/!svn/ver/9/trunk/tiles/src/main/webapp/WEB-INF/jsp/layout/layout.jsp
+END
+footer.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/spring-tutorial/code/!svn/ver/9/trunk/tiles/src/main/webapp/WEB-INF/jsp/layout/footer.jsp
+END
+header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/spring-tutorial/code/!svn/ver/9/trunk/tiles/src/main/webapp/WEB-INF/jsp/layout/header.jsp
+END
+menu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/spring-tutorial/code/!svn/ver/9/trunk/tiles/src/main/webapp/WEB-INF/jsp/layout/menu.jsp
+END

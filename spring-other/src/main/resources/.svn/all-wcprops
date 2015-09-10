@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/spring-tutorial/code/!svn/ver/56/trunk/spring-other/src/main/resources
+END
+context.properties
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/spring-tutorial/code/!svn/ver/56/trunk/spring-other/src/main/resources/context.properties
+END
+appcontext-ldap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/spring-tutorial/code/!svn/ver/56/trunk/spring-other/src/main/resources/appcontext-ldap.xml
+END
+appcontext-service.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/spring-tutorial/code/!svn/ver/56/trunk/spring-other/src/main/resources/appcontext-service.xml
+END
+appcontext-mail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/spring-tutorial/code/!svn/ver/56/trunk/spring-other/src/main/resources/appcontext-mail.xml
+END

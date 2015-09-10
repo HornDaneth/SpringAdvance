@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/p/spring-tutorial/code/!svn/ver/22/trunk/SpringSocket-io/src/main/resources/static
+END
+static-subscriber.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/spring-tutorial/code/!svn/ver/22/trunk/SpringSocket-io/src/main/resources/static/static-subscriber.html
+END
+dynamic-subscriber.html
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/p/spring-tutorial/code/!svn/ver/22/trunk/SpringSocket-io/src/main/resources/static/dynamic-subscriber.html
+END
+stomp.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/spring-tutorial/code/!svn/ver/22/trunk/SpringSocket-io/src/main/resources/static/stomp.js
+END
+sockjs-0.3.4.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/spring-tutorial/code/!svn/ver/22/trunk/SpringSocket-io/src/main/resources/static/sockjs-0.3.4.js
+END

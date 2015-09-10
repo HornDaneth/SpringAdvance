@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+			http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd">
+
+	<util:map id="htmlExportParameterMap">
+		<entry
+			key="net.sf.jasperreports.engine.export.JRHtmlExporterParameter.IS_USING_IMAGES_TO_ALIGN">
+			<value>false</value>
+		</entry>
+		<!-- <entry
+			key="net.sf.jasperreports.engine.export.JRHtmlExporterParameter.IS_OUTPUT_IMAGES_TO_DIR">
+			<value>true</value>
+		</entry>
+		<entry
+			key="net.sf.jasperreports.engine.export.JRHtmlExporterParameter.IMAGES_URI">
+			<value>images?image=</value>
+		</entry>
+		<entry
+			key="net.sf.jasperreports.engine.export.JRHtmlExporterParameter.IMAGES_DIR_NAME">
+			<value>/home/rupa/Workspace/sample/src/main/webapp/images/rupa
+			</value>
+		</entry> -->
+	</util:map>
+	
+	
+	
+	<!-- Declare Spring's View Resolvers for Jasper Based on the bean names 
+		we can infer that: * pdfReport is for generating PDFs * xlsReport is for 
+		Excel format reports * htmlReport is for HTML reports * csvReport is for 
+		CSV reports -->
+	<!-- id: the name to be used as a reference in the controller url: the path 
+		where the Jasper JRXML file is located reportDateKey: the name of the datasource. 
+		This is passed by the controller -->
+	<bean id="pdfReport" 
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="classpath:/jasper/report1.jrxml" p:reportDataKey="datasource" />
+
+	<bean id="xlsReport"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"
+		p:url="classpath:/jasper/report1.jrxml" p:reportDataKey="datasource" />
+
+	<bean id="htmlReport"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsHtmlView"
+		p:url="classpath:/jasper/report1.jrxml" p:reportDataKey="datasource" 
+		p:exporterParameters-ref="htmlExportParameterMap"/>
+
+	<bean id="csvReport"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsCsvView"
+		p:url="classpath:/jasper/report1.jrxml" p:reportDataKey="datasource" />
+		
+</beans>

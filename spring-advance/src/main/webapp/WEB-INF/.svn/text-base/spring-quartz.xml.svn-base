@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
+
+
+	
+	<bean id="taskScheduler" class="com.mcnc.scheduler.TaskScheduler" />
+
+	<!-- #################################################################-->
+	<!-- ###########################Job Detail ###########################-->
+	<!-- #################################################################-->
+	<bean name="jobDetailBean" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="taskScheduler" />
+        <property name="targetMethod" value="run" />
+	</bean>
+
+	<!-- #################################################################-->
+	<!-- ###########################Trigger ##############################-->
+	<!-- #################################################################-->
+	<!-- Simple Trigger, run every 5 seconds -->
+	<bean id="simpleTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
+		<property name="jobDetail" ref="jobDetailBean" />
+		<property name="repeatInterval" value="5000" />
+		<property name="startDelay" value="1000" />
+
+	</bean>
+	<!-- Cron Trigger, run every 5 seconds -->
+	<bean id="cronTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+
+		<property name="jobDetail" ref="jobDetailBean" />
+		<property name="cronExpression" value="0/5 * * * * ?" />
+
+	</bean>
+
+	<!-- #################################################################-->
+	<!-- #######################Scheduler Factory#########################-->
+	<!-- #################################################################-->
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="jobDetails">
+			<list>
+				<ref bean="jobDetailBean" />
+			</list>
+		</property>
+
+		<property name="triggers">
+			<list>
+				<ref bean="simpleTrigger" />
+			</list>
+		</property>
+	</bean>
+
+</beans>

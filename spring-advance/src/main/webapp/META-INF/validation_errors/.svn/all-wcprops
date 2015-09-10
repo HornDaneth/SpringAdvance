@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/spring-tutorial/code/!svn/ver/78/trunk/spring-advance/src/main/webapp/META-INF/validation_errors
+END
+messages_en_US.properties
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/p/spring-tutorial/code/!svn/ver/77/trunk/spring-advance/src/main/webapp/META-INF/validation_errors/messages_en_US.properties
+END
+messages_km_KH.properties
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/p/spring-tutorial/code/!svn/ver/78/trunk/spring-advance/src/main/webapp/META-INF/validation_errors/messages_km_KH.properties
+END

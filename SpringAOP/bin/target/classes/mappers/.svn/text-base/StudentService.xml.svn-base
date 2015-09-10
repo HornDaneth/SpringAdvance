@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.test.SpringMyBatisMVC.StudentService">
+	
+	<resultMap id="Student" type="Student">
+        <result property="ID" column="ID"/>
+        <result property="Name" column="Name"/>
+    </resultMap>
+	
+	<select id="getStudentById"  parameterType="Student" resultMap="Student">  
+		SELECT * FROM Student
+		<where>
+			<if test="ID!=''">ID = #{ID}</if>
+		</where>
+		<!-- where ID= #{ID} -->
+	</select>
+	
+	<!-- <insert id="saveUser" parameterType="user">
+		INSERT INTO user (id,name,standard,age,sex) 
+    	VALUE (#{id},#{name},#{standard},#{age},#{sex})
+	</insert>
+	
+	<update id="updateUser" parameterType="user"> 
+  		UPDATE user
+  		SET
+  			name = #{name},  
+			standard = #{standard},  
+			age = #{age},  
+			sex = #{sex} 
+  		where id = #{id} 
+	</update>
+	
+	<delete id="deleteUser" parameterType="int">
+    	DELETE FROM user
+    	WHERE id = #{id}
+    </delete> -->
+</mapper>

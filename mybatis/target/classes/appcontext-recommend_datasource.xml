@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mybatis="http://mybatis.org/schema/mybatis-spring"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+		http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring.xsd">
+	
+	
+	<bean id="commonDS" class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+       	p:driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+		p:url="${DB.url}"
+		p:username="${DB.username}"
+		p:password="${DB.password}"/>
+
+    <bean id="pool" class="org.apache.commons.pool.impl.GenericObjectPool"
+    	p:maxActive="8"
+    	p:testOnBorrow="false"
+    	p:testOnReturn="false"
+    	p:testWhileIdle="true"
+        p:minEvictableIdleTimeMillis="300000"
+        p:timeBetweenEvictionRunsMillis="60000"/>
+
+    <bean id="dsConnectionFactory" class="org.apache.commons.dbcp.DataSourceConnectionFactory">
+        <constructor-arg ref="commonDS"/>
+    </bean>
+
+    <bean id="poolableConnectionFactory" class="org.apache.commons.dbcp.PoolableConnectionFactory">
+        <constructor-arg index="0" ref="dsConnectionFactory"/>
+        <constructor-arg index="1" ref="pool"/>
+        <constructor-arg index="2" value="#{ null }"/>  <!-- SpEL -->
+        <constructor-arg index="3"><null/></constructor-arg> <!-- Spring 2.5 -->
+        <constructor-arg index="4" value="false"/>
+        <constructor-arg index="5" value="true"/>
+    </bean>
+
+    <bean id="pooledDS" class="org.apache.commons.dbcp.PoolingDataSource" depends-on="poolableConnectionFactory">
+        <constructor-arg ref="pool"/>
+    </bean>
+    
+    
+	
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
+		p:dataSource-ref="pooledDS"
+		p:configLocation="classpath:/mybatis/context-sqlmap.xml"
+	/>
+
+	<mybatis:scan base-package="com.mcnc.mybatis.dao" factory-ref="sqlSessionFactory"/>
+	
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
+		p:dataSource-ref="pooledDS" />
+	
+	<!-- It can omit transaction-manager="transactionManager" if there is been name transactionManager -->
+	<tx:annotation-driven/>
+</beans>

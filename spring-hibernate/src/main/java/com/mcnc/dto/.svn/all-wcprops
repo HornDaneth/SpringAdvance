@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/p/spring-tutorial/code/!svn/ver/33/trunk/spring-hibernate/src/main/java/com/mcnc/dto
+END
+StockDTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/spring-tutorial/code/!svn/ver/33/trunk/spring-hibernate/src/main/java/com/mcnc/dto/StockDTO.java
+END
+StockDetailDTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/spring-tutorial/code/!svn/ver/33/trunk/spring-hibernate/src/main/java/com/mcnc/dto/StockDetailDTO.java
+END
+StudentDTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/spring-tutorial/code/!svn/ver/33/trunk/spring-hibernate/src/main/java/com/mcnc/dto/StudentDTO.java
+END

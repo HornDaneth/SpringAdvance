@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/spring-tutorial/code/!svn/ver/33/trunk/spring-hibernate/src/main/java/com/mcnc/dao/impl
+END
+StockDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/spring-tutorial/code/!svn/ver/33/trunk/spring-hibernate/src/main/java/com/mcnc/dao/impl/StockDAO.java
+END
+StockDetailDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/spring-tutorial/code/!svn/ver/33/trunk/spring-hibernate/src/main/java/com/mcnc/dao/impl/StockDetailDAO.java
+END
+StudentDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/spring-tutorial/code/!svn/ver/33/trunk/spring-hibernate/src/main/java/com/mcnc/dao/impl/StudentDAO.java
+END

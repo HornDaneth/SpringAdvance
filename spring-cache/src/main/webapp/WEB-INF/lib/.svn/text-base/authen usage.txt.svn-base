@@ -1,0 +1,3 @@
+﻿-- Specificly the dll location: 
+select project, right click->properties, "java build path", "libraries" tab, select a jar, expand it, 
+select "Native library location", click "edit..."

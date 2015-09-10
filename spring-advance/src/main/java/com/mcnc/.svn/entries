@@ -1,0 +1,49 @@
+10
+
+dir
+89
+http://svn.code.sf.net/p/spring-tutorial/code/trunk/spring-advance/src/main/java/com/mcnc
+http://svn.code.sf.net/p/spring-tutorial/code
+
+
+
+2015-02-27T05:54:50.825292Z
+81
+seakleng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6ef1c4b0-39d5-4bde-9924-36891aab1679
+
+controller
+dir
+
+dto
+dir
+
+exception
+dir
+
+scheduler
+dir
+
+scope
+dir
+
+service
+dir
+
+util
+dir
+

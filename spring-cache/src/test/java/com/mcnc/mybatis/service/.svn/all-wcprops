@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/spring-tutorial/code/!svn/ver/66/trunk/spring-cache/src/test/java/com/mcnc/mybatis/service
+END
+StudentServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/p/spring-tutorial/code/!svn/ver/66/trunk/spring-cache/src/test/java/com/mcnc/mybatis/service/StudentServiceTest.java
+END
+StudentServiceCacheTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/p/spring-tutorial/code/!svn/ver/66/trunk/spring-cache/src/test/java/com/mcnc/mybatis/service/StudentServiceCacheTest.java
+END

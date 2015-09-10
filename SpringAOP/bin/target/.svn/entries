@@ -1,0 +1,80 @@
+10
+
+dir
+89
+http://svn.code.sf.net/p/spring-tutorial/code/trunk/SpringAOP/bin/target
+http://svn.code.sf.net/p/spring-tutorial/code
+
+
+
+2015-01-02T08:22:06.213060Z
+3
+seakleng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6ef1c4b0-39d5-4bde-9924-36891aab1679
+
+SpringMVC
+dir
+
+SpringMVC.war
+file
+
+
+
+
+2015-09-09T04:10:37.254000Z
+99a040d487cae01b5a00e2df002b7922
+2015-01-02T08:22:06.213060Z
+3
+seakleng
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10840128
+
+classes
+dir
+
+generated-sources
+dir
+
+maven-archiver
+dir
+
+surefire
+dir
+
+work
+dir
+

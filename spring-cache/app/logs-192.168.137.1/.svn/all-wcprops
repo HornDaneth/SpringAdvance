@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/spring-tutorial/code/!svn/ver/66/trunk/spring-cache/app/logs-192.168.137.1
+END
+.terracotta-logging.lock
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/spring-tutorial/code/!svn/ver/66/trunk/spring-cache/app/logs-192.168.137.1/.terracotta-logging.lock
+END
+terracotta-client.log.1
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/spring-tutorial/code/!svn/ver/66/trunk/spring-cache/app/logs-192.168.137.1/terracotta-client.log.1
+END
+terracotta-client.log.2
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/spring-tutorial/code/!svn/ver/66/trunk/spring-cache/app/logs-192.168.137.1/terracotta-client.log.2
+END

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:lang="http://www.springframework.org/schema/lang"
+    xsi:schemaLocation="
+ 
+http://www.springframework.org/schema/beans
+ 
+ 
+http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+ 
+ 
+http://www.springframework.org/schema/lang
+ 
+ 
+http://www.springframework.org/schema/lang/spring-lang-3.2.xsd">
+
+ 	<bean id="student" class="com.mcnc.dto.Student" scope="prototype">
+ 		<property name="name" value="dara"></property>
+ 		<property name="score" value="49"></property>
+ 	</bean>
+    <lang:groovy id="highSchoolScoreService" script-source="classpath:com/mcnc/service/impl/highschool.groovy" refresh-check-delay="1000"  >
+    	<lang:property name="student" ref="student"/>
+    </lang:groovy>
+ 
+</beans>

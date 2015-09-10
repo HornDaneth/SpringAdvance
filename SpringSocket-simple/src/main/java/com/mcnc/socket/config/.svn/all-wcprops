@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/spring-tutorial/code/!svn/ver/25/trunk/SpringSocket-simple/src/main/java/com/mcnc/socket/config
+END
+SessionInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/p/spring-tutorial/code/!svn/ver/25/trunk/SpringSocket-simple/src/main/java/com/mcnc/socket/config/SessionInterceptor.java
+END
+WebSocketConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/p/spring-tutorial/code/!svn/ver/25/trunk/SpringSocket-simple/src/main/java/com/mcnc/socket/config/WebSocketConfig.java
+END

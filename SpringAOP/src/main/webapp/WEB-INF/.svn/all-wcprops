@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/spring-tutorial/code/!svn/ver/3/trunk/SpringAOP/src/main/webapp/WEB-INF
+END
+mvc-dispatcher-servlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/spring-tutorial/code/!svn/ver/3/trunk/SpringAOP/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/spring-tutorial/code/!svn/ver/3/trunk/SpringAOP/src/main/webapp/WEB-INF/web.xml
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/spring-tutorial/code/!svn/ver/3/trunk/SpringAOP/bin/target/classes/mybatis
+END
+context.properties
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/spring-tutorial/code/!svn/ver/3/trunk/SpringAOP/bin/target/classes/mybatis/context.properties
+END
+sqlmap-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/spring-tutorial/code/!svn/ver/3/trunk/SpringAOP/bin/target/classes/mybatis/sqlmap-config.xml
+END
+source-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/spring-tutorial/code/!svn/ver/3/trunk/SpringAOP/bin/target/classes/mybatis/source-config.xml
+END
