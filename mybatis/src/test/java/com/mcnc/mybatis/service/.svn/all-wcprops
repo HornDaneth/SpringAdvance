@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/spring-tutorial/code/!svn/ver/60/trunk/mybatis/src/test/java/com/mcnc/mybatis/service
+END
+StudentServiceManualTransactionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/p/spring-tutorial/code/!svn/ver/60/trunk/mybatis/src/test/java/com/mcnc/mybatis/service/StudentServiceManualTransactionTest.java
+END
+DAOExtensionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/spring-tutorial/code/!svn/ver/60/trunk/mybatis/src/test/java/com/mcnc/mybatis/service/DAOExtensionTest.java
+END
+StudentServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/p/spring-tutorial/code/!svn/ver/60/trunk/mybatis/src/test/java/com/mcnc/mybatis/service/StudentServiceTest.java
+END
+StudentServiceTransactionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/p/spring-tutorial/code/!svn/ver/60/trunk/mybatis/src/test/java/com/mcnc/mybatis/service/StudentServiceTransactionTest.java
+END
+StudentServiceJndiTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/p/spring-tutorial/code/!svn/ver/60/trunk/mybatis/src/test/java/com/mcnc/mybatis/service/StudentServiceJndiTest.java
+END

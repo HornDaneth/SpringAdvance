@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/p/spring-tutorial/code/!svn/ver/87/trunk/jsonp/src/test/resources
+END
+appcontext-new-client.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/spring-tutorial/code/!svn/ver/87/trunk/jsonp/src/test/resources/appcontext-new-client.xml
+END
+appcontext-client.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/spring-tutorial/code/!svn/ver/87/trunk/jsonp/src/test/resources/appcontext-client.xml
+END
+appcontext-test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/spring-tutorial/code/!svn/ver/87/trunk/jsonp/src/test/resources/appcontext-test.xml
+END

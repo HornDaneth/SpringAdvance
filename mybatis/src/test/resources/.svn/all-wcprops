@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/p/spring-tutorial/code/!svn/ver/60/trunk/mybatis/src/test/resources
+END
+jndi.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/spring-tutorial/code/!svn/ver/47/trunk/mybatis/src/test/resources/jndi.xml
+END
+appcontext-test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/p/spring-tutorial/code/!svn/ver/7/trunk/mybatis/src/test/resources/appcontext-test.xml
+END
+appcontext-datasource-win.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/spring-tutorial/code/!svn/ver/60/trunk/mybatis/src/test/resources/appcontext-datasource-win.xml
+END
+appcontext-test-jndi.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/spring-tutorial/code/!svn/ver/60/trunk/mybatis/src/test/resources/appcontext-test-jndi.xml
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/p/spring-tutorial/code/!svn/ver/60/trunk/mybatis/src/main/resources/mybatis/mappers/extension
+END
+BaseDAO.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/spring-tutorial/code/!svn/ver/60/trunk/mybatis/src/main/resources/mybatis/mappers/extension/BaseDAO.xml
+END
+ChildDAO.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/p/spring-tutorial/code/!svn/ver/60/trunk/mybatis/src/main/resources/mybatis/mappers/extension/ChildDAO.xml
+END

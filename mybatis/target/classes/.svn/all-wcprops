@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/p/spring-tutorial/code/!svn/ver/7/trunk/mybatis/target/classes
+END
+appcontext-services.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/p/spring-tutorial/code/!svn/ver/7/trunk/mybatis/target/classes/appcontext-services.xml
+END
+appcontext-root.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/p/spring-tutorial/code/!svn/ver/7/trunk/mybatis/target/classes/appcontext-root.xml
+END
+property.properties
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/p/spring-tutorial/code/!svn/ver/7/trunk/mybatis/target/classes/property.properties
+END
+appcontext-datasource.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/spring-tutorial/code/!svn/ver/7/trunk/mybatis/target/classes/appcontext-datasource.xml
+END

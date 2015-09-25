@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/p/spring-tutorial/code/!svn/ver/87/trunk/jsonp/src/main/webapp/WEB-INF
+END
+log4j.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/spring-tutorial/code/!svn/ver/87/trunk/jsonp/src/main/webapp/WEB-INF/log4j.xml
+END
+appcontext-root.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/spring-tutorial/code/!svn/ver/87/trunk/jsonp/src/main/webapp/WEB-INF/appcontext-root.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/spring-tutorial/code/!svn/ver/87/trunk/jsonp/src/main/webapp/WEB-INF/web.xml
+END
+spring-servlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/spring-tutorial/code/!svn/ver/87/trunk/jsonp/src/main/webapp/WEB-INF/spring-servlet.xml
+END

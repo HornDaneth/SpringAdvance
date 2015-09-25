@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/p/spring-tutorial/code/!svn/ver/7/trunk/mybatis/target/test-classes
+END
+appcontext-test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/spring-tutorial/code/!svn/ver/7/trunk/mybatis/target/test-classes/appcontext-test.xml
+END
+appcontext-datasource-win.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/spring-tutorial/code/!svn/ver/7/trunk/mybatis/target/test-classes/appcontext-datasource-win.xml
+END

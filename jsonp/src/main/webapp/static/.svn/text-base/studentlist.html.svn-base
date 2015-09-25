@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Student List</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+		</tr>
+		<tbody id="lstStudents">
+		</tbody>
+	</table>
+	<p id="txtText">
+	</p>
+	<script type="text/javascript" src='https://code.jquery.com/jquery-1.11.2.min.js' ></script>
+	<script type="text/javascript">
+		$(function(){
+			
+			// Using JSONP, it only works for GET method
+			$.ajax({
+			    url: "http://localhost:8080/jsonp/api/students",
+			 
+			    jsonp: "callback",
+			 
+			    // Tell jQuery we're expecting JSONP
+			    dataType: "jsonp",
+			 
+			 
+			    // Work with the response
+			    success: function( students ) {
+			    	
+			    	var $lstStudents = $("#lstStudents");
+			    	
+			    	$.each(students, function(index, student){
+						var $tr = $("<tr>")
+							.append(
+								$("<td>")
+									.text(student.studentId)
+							)
+							.append(
+								$("<td>")
+									.text(student.studentName)
+							);
+						$lstStudents.append($tr);
+					});
+			    },
+			    
+			    error: function( jqxhr, textStatus, error ) {
+					alert( error.message ); // server response
+			    }
+			
+			});
+		}); 
+	</script>
+</body>
+</html>

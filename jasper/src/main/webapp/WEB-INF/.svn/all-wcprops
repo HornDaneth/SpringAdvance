@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/p/spring-tutorial/code/!svn/ver/45/trunk/jasper/src/main/webapp/WEB-INF
+END
+jasper-view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/spring-tutorial/code/!svn/ver/45/trunk/jasper/src/main/webapp/WEB-INF/jasper-view.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/spring-tutorial/code/!svn/ver/45/trunk/jasper/src/main/webapp/WEB-INF/web.xml
+END
+spring-servlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/spring-tutorial/code/!svn/ver/45/trunk/jasper/src/main/webapp/WEB-INF/spring-servlet.xml
+END
