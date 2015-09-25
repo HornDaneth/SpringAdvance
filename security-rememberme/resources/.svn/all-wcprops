@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/p/spring-tutorial/code/!svn/ver/75/trunk/security-rememberme/resources
+END
+context.properties
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/spring-tutorial/code/!svn/ver/75/trunk/security-rememberme/resources/context.properties
+END
+log4j.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/spring-tutorial/code/!svn/ver/75/trunk/security-rememberme/resources/log4j.xml
+END
+appcontext-security.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/spring-tutorial/code/!svn/ver/75/trunk/security-rememberme/resources/appcontext-security.xml
+END
+appcontext-root.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/spring-tutorial/code/!svn/ver/75/trunk/security-rememberme/resources/appcontext-root.xml
+END

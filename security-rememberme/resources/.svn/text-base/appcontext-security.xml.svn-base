@@ -1,0 +1,39 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+	http://www.springframework.org/schema/security
+	http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+	
+    <http use-expressions="true">
+    	<intercept-url pattern="/index.do" access="hasRole('ROLE_USER')" />
+
+	    <logout logout-success-url="/logout.do" delete-cookies="SPRING_SECURITY_REMEMBER_ME_COOKIE"/>
+	    <remember-me  services-ref="rememberMeServices"/>
+      
+		<form-login login-page="/login.do" default-target-url="/index.do"
+			authentication-failure-url="/loginfailed.do" />
+    </http>
+
+    <authentication-manager alias="authenticationManager">
+        <authentication-provider ref="userPersistentAuthenticationProvider"/>
+        <authentication-provider ref="rememberMeAuthenticationProvider"/>
+   	</authentication-manager>
+ 	
+ 	
+ 	<beans:bean id="rememberMeServices" 
+ 		class="com.mcnc.security.service.impl.InMemoryPersistentTokenBasedRememberMeServices">
+		<beans:constructor-arg index="0" value="mcnc"/>
+		<beans:constructor-arg index="1" ref="inMemoryAuthenticatedUserDetialService"/>
+		<beans:constructor-arg index="2" ref="persistentTokenService"/>
+		<!-- <beans:property name="alwaysRemember" value="true"/> -->
+	</beans:bean> 	
+	
+	<beans:bean id="rememberMeAuthenticationProvider" 
+		class="org.springframework.security.authentication.RememberMeAuthenticationProvider">
+		<beans:constructor-arg index="0" value="mcnc"/>
+	</beans:bean>
+
+ 	  	
+</beans:beans>

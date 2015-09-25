@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/p/spring-tutorial/code/!svn/ver/75/trunk/security-rememberme/src/com/mcnc/security/persistent
+END
+InMemoryAuthenticatedUserDetialService.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/p/spring-tutorial/code/!svn/ver/75/trunk/security-rememberme/src/com/mcnc/security/persistent/InMemoryAuthenticatedUserDetialService.java
+END
+InMemoryPersistentTokenDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/p/spring-tutorial/code/!svn/ver/75/trunk/security-rememberme/src/com/mcnc/security/persistent/InMemoryPersistentTokenDAO.java
+END
+PersistentTokenServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/p/spring-tutorial/code/!svn/ver/75/trunk/security-rememberme/src/com/mcnc/security/persistent/PersistentTokenServiceImpl.java
+END

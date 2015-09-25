@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/spring-tutorial/code/!svn/ver/18/trunk/security/src/main/webapp/WEB-INF
+END
+log4j.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/spring-tutorial/code/!svn/ver/18/trunk/security/src/main/webapp/WEB-INF/log4j.xml
+END
+security-withfile.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/spring-tutorial/code/!svn/ver/18/trunk/security/src/main/webapp/WEB-INF/security-withfile.xml
+END
+security-ldap-auth.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/spring-tutorial/code/!svn/ver/18/trunk/security/src/main/webapp/WEB-INF/security-ldap-auth.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/spring-tutorial/code/!svn/ver/18/trunk/security/src/main/webapp/WEB-INF/web.xml
+END
+spring-servlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/spring-tutorial/code/!svn/ver/18/trunk/security/src/main/webapp/WEB-INF/spring-servlet.xml
+END
+security-auth.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/spring-tutorial/code/!svn/ver/18/trunk/security/src/main/webapp/WEB-INF/security-auth.xml
+END
