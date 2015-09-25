@@ -1,0 +1,8 @@
+/META-INF/
+/WEB-INF/
+/appcontext-root.xml
+/appcontext-security.xml
+/com/
+/context.properties
+/log4j.xml
+/main/
