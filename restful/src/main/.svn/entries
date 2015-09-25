@@ -1,0 +1,37 @@
+10
+
+dir
+89
+http://svn.code.sf.net/p/spring-tutorial/code/trunk/restful/src/main
+http://svn.code.sf.net/p/spring-tutorial/code
+
+
+
+2015-01-28T08:38:56.969948Z
+57
+seakleng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6ef1c4b0-39d5-4bde-9924-36891aab1679
+
+java
+dir
+
+resources
+dir
+
+webapp
+dir
+
