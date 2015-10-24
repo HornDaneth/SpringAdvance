@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/p/spring-tutorial/code/!svn/ver/5/trunk/NoSQL/target/test-classes
+END
+appcontext-root.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/spring-tutorial/code/!svn/ver/5/trunk/NoSQL/target/test-classes/appcontext-root.xml
+END
+appcontext-datasource.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/spring-tutorial/code/!svn/ver/5/trunk/NoSQL/target/test-classes/appcontext-datasource.xml
+END
+appcontext-service.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/spring-tutorial/code/!svn/ver/5/trunk/NoSQL/target/test-classes/appcontext-service.xml
+END
